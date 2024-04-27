@@ -1,0 +1,35 @@
+[package]
+name = "game_of_life"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hsv = "0.1.1"
+# bevy = { version = "0.13.0", features = ["dynamic_linking"] }
+
+# # Enable a small amount of optimization in debug mode
+# [profile.dev]
+# opt-level = 1
+#
+# # Enable high optimizations for dependencies (incl. Bevy), but not for our code:
+# [profile.dev.package."*"]
+# opt-level = 3
+#
+# # NOTE: For maximum performance, build using a nightly compiler
+# # If you are using rust stable, remove the "-Zshare-generics=y" below.
+#
+# [target.x86_64-unknown-linux-gnu]
+# linker = "clang"
+# rustflags = [
+#   "-C",
+#   "link-arg=-fuse-ld=/usr/bin/mold", # Use mold linker
+#   "-Z",
+#   "share-generics=y",                # (Nightly) Make the current crate share its generic instantiations
+#   "-Z",
+#   "threads=0",                       # (Nightly) Use improved multithreading with the recommended amount of threads.
+# ]
+#
+# # Optional: Uncommenting the following improves compile times, but reduces the amount of debug info to 'line number tables only'
+# # In most cases the gains are negligible, but if you are on macos and have slow compile times you should see significant gains.
+# #[profile.dev]
+# #debug = 1
