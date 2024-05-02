@@ -34,7 +34,6 @@ fn count_neighbors(x: usize, y: usize, world: &[Vec<bool>]) -> u8 {
     count
 }
 
-// Terminal
 fn main() {
     // let mut len = String::new();
     // println!("Enter the amount of rows and cols: ");
